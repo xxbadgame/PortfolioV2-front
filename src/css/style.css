@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom {
+    @apply bg-customBg;
+  }
+  
+.grey-custom {
+    @apply text-customGrey;
+}
+
+.purple-custom{
+    @apply text-customPurple;
+}
+
+.custom-rotate {
+    @apply transform;
+    transform: rotate(-15deg);
+  }
