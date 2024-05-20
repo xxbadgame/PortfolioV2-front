@@ -13,19 +13,32 @@ const Computer = document.querySelector('.CloseComputer');
 const Business = document.querySelector('.CloseBusiness');
 const SoftSkills = document.querySelector('.CloseSoftSkills');
 
-function fonctionCompetences(id){
-    document.getElementById(id).classList.remove("opacity-0")
-    anime({
-        targets: '#'+id,
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 1000,
-        delay: function(el, i) { return i * 250 },
-      });
+function ElementAnime(selector){
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+        element.classList.remove("ElementInvisible");
+        element.classList.add("ElementVisible");
+
+        anime({
+            targets: element,
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 1000,
+            delay: function(el, i) { return i * 250 },
+          });
+    });
+}
+
+function ElementDisparition(selector){
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+        element.classList.remove("ElementVisible");
+        element.classList.add("ElementInvisible");
+    });
 }
 
 function DisparitionSkills(id){
-    document.getElementById(id).classList.add("opacity-0")
+    document.getElementById(id).classList.add("opacity-0");
 }
 
 function AttenteEtage(id,etage){
@@ -42,55 +55,21 @@ function AnimOuverture(selector, target, propTranslate , valeur){
         });
 
         if (isOpen == false && selector == SoftSkills){
-            fonctionCompetences("RSS1");
-            fonctionCompetences("RSS2");
-            fonctionCompetences("RSS3");
-            fonctionCompetences("BSS1");
-            fonctionCompetences("BSS2");
-            fonctionCompetences("BSS3");
+            ElementAnime(".ElementAnimeSoftSkills");
         } else if(isOpen == true && selector == SoftSkills){
-            DisparitionSkills("RSS1");
-            DisparitionSkills("RSS2");
-            DisparitionSkills("RSS3");
-            DisparitionSkills("BSS1");
-            DisparitionSkills("BSS2");
-            DisparitionSkills("BSS3");
+            ElementDisparition(".ElementAnimeSoftSkills");
         }else if(isOpen == false && selector == Computer){
-            fonctionCompetences("BC1");
-            fonctionCompetences("BC2");
-            fonctionCompetences("BC3");
-            fonctionCompetences("RC1");
-            fonctionCompetences("RC2");
-            fonctionCompetences("RC3");
+            ElementAnime(".ElementAnimeComputer");
         }else if(isOpen == true && selector == Computer){
-            DisparitionSkills("BC1");
-            DisparitionSkills("BC2");
-            DisparitionSkills("BC3");
-            DisparitionSkills("RC1");
-            DisparitionSkills("RC2");
-            DisparitionSkills("RC3");
+            ElementDisparition(".ElementAnimeComputer");
         }else if(isOpen == false && selector == Business){
-            fonctionCompetences("RB1");
-            fonctionCompetences("RB2");
-            fonctionCompetences("RB3");
-            fonctionCompetences("RB4");
-            fonctionCompetences("RB5");
-            fonctionCompetences("BB1");
-            fonctionCompetences("BB2");
-            fonctionCompetences("BB3");
-            fonctionCompetences("BB4");
-            fonctionCompetences("BB5");
+            ElementAnime(".ElementAnimeBusiness");
         }else if(isOpen == true && selector == Business){
-            DisparitionSkills("RB1");
-            DisparitionSkills("RB2");
-            DisparitionSkills("RB3");
-            DisparitionSkills("RB4");
-            DisparitionSkills("RB5");
-            DisparitionSkills("BB1");
-            DisparitionSkills("BB2");
-            DisparitionSkills("BB3");
-            DisparitionSkills("BB4");
-            DisparitionSkills("BB5");
+            ElementDisparition(".ElementAnimeBusiness");
+        }else if(isOpen == false && selector == Data){
+            ElementAnime(".ElementAnimeData");
+        }else if(isOpen == true && selector == Data){
+            ElementDisparition(".ElementAnimeData");
         }
 
         isOpen = !isOpen;

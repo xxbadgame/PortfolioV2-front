@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .absolute {
   position: absolute;
 }
@@ -715,18 +711,18 @@ video {
   opacity: 0;
 }
 
-.transition-opacity {
+.ElementInvisible {
+  opacity: 0;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-1000 {
   transition-duration: 1000ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+.ElementVisible {
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
 
 .bg-custom {
