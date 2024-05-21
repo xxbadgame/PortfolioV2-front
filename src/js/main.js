@@ -13,7 +13,15 @@ const Computer = document.querySelector('.CloseComputer');
 const Business = document.querySelector('.CloseBusiness');
 const SoftSkills = document.querySelector('.CloseSoftSkills');
 
-function ElementAnime(selector){
+function ElementAnime(selector, id){
+
+    const titre = document.getElementById(id);
+    const classesToAdd = ['opacity-0', 'transition-opacity', 'duration-500'];
+
+    classesToAdd.forEach(className => {
+        titre.classList.add(className);
+    });
+
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
         element.classList.remove("ElementInvisible");
@@ -29,16 +37,15 @@ function ElementAnime(selector){
     });
 }
 
-function ElementDisparition(selector){
+function ElementDisparition(selector, id){
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
         element.classList.remove("ElementVisible");
         element.classList.add("ElementInvisible");
     });
-}
 
-function DisparitionSkills(id){
-    document.getElementById(id).classList.add("opacity-0");
+    const titre = document.getElementById(id);
+    titre.classList.remove('opacity-0');
 }
 
 function AttenteEtage(id,etage){
@@ -53,23 +60,24 @@ function AnimOuverture(selector, target, propTranslate , valeur){
             targets : target,
             [propTranslate] : isOpen ? 0 : valeur,
         });
+            
 
         if (isOpen == false && selector == SoftSkills){
-            ElementAnime(".ElementAnimeSoftSkills");
+            ElementAnime(".ElementAnimeSoftSkills", "SoftSkillsTitre");
         } else if(isOpen == true && selector == SoftSkills){
-            ElementDisparition(".ElementAnimeSoftSkills");
+            ElementDisparition(".ElementAnimeSoftSkills", "SoftSkillsTitre");
         }else if(isOpen == false && selector == Computer){
-            ElementAnime(".ElementAnimeComputer");
+            ElementAnime(".ElementAnimeComputer", "ComputerTitre");
         }else if(isOpen == true && selector == Computer){
-            ElementDisparition(".ElementAnimeComputer");
+            ElementDisparition(".ElementAnimeComputer", "ComputerTitre");
         }else if(isOpen == false && selector == Business){
-            ElementAnime(".ElementAnimeBusiness");
+            ElementAnime(".ElementAnimeBusiness", "BusinessTitre");
         }else if(isOpen == true && selector == Business){
-            ElementDisparition(".ElementAnimeBusiness");
+            ElementDisparition(".ElementAnimeBusiness", "BusinessTitre");
         }else if(isOpen == false && selector == Data){
-            ElementAnime(".ElementAnimeData");
+            ElementAnime(".ElementAnimeData", "DataTitre");
         }else if(isOpen == true && selector == Data){
-            ElementDisparition(".ElementAnimeData");
+            ElementDisparition(".ElementAnimeData", "DataTitre");
         }
 
         isOpen = !isOpen;
@@ -79,7 +87,7 @@ function AnimOuverture(selector, target, propTranslate , valeur){
 }
 
 
-AnimOuverture(Data, '.CloseData', 'translateY', 20);
+AnimOuverture(Data ,'.CloseData', 'translateY', 20);
 AnimOuverture(Computer, '.CloseComputer', 'translateX', -20);
 AnimOuverture(Business, '.CloseBusiness', 'translateX', 20);
 AnimOuverture(SoftSkills, '.CloseSoftSkills', 'translateY', -20);
