@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Satoshi-italic";
+  src: url("/fonts/Satoshi-VariableItalic.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --background-color: rgb(15, 15, 15);
+    --dark-grey: rgb(40, 40, 42);
+    --grey: rgb(77, 78, 86);
+    --light-grey: rgb(162, 162, 164);
+    --blue-yt: #0092E4;
+
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --font-size-sm: 13px;
+    --font-size-heading: 32px;
+    --font-size-subheading: 20px;
+  
+    --font-nav-bar : "DM Mono", monospace;
+    --font-family: "Satoshi", sans-serif;
+    --font-family-italic: "Satoshi-Italic", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }

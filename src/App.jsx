@@ -1,4 +1,5 @@
 import React from 'react';
+import "./theme.css"
 import Hero from './components/home/Hero';
 import Projects from './components/home/Projects';
 import About from './components/home/About';
@@ -15,6 +16,7 @@ function App() {
 
       {/*
       <Hero />
+      
       <Projects />
       <About />
       <Services />
