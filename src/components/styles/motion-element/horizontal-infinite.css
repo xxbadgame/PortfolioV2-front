@@ -36,6 +36,13 @@
     animation: scroll 30s linear infinite;
 }
 
+@media screen and (max-width: 810px) {
+    .dataOnMe {
+        min-width: 800%;
+        animation-duration: 10s;
+    }
+}
+
 .scroll-parent:hover .dataOnMe {
     animation-play-state: paused;
 }
