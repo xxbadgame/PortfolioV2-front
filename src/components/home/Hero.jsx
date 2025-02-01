@@ -34,7 +34,7 @@ const Hero = ({isMobile}) => {
                 <img 
                     style={{
                         width:"100%",
-                        height: isMobile ? "80vh" : "auto",
+                        height: isMobile ? "60vh" : "auto",
                         objectFit: "cover",
                         objectPosition: "center",
                         borderBottomLeftRadius: isMobile ? "70px" : "200px"
