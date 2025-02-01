@@ -2,7 +2,15 @@ import React from "react";
 
 const ButtonShared = ({children}) => {
     return (
-        <p>{children}</p>
+        <button
+            style={{
+                border: "none",
+                marginLeft: "50px",
+                backgroundColor: "var(--personal-color)",
+            }}
+        >
+            {children}
+        </button>
     );
 };
 

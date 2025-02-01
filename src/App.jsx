@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./theme.css"
 import Hero from './components/home/Hero';
 import Projects from './components/home/Projects';
@@ -10,13 +10,38 @@ import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
 
 function App() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isMobile = windowWidth <= 810;
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div>
-      <Navbar />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: isMobile ? "column" : "row",
+        overflow:"hidden",
+      }}
+    >
+      <Navbar isMobile={isMobile}/>
+
+      <div 
+        style={{
+          marginLeft: isMobile ? "0px" : "50px",
+        }}
+      >
+        <Hero isMobile={isMobile}/>
+      </div>
+      
 
       {/*
-      <Hero />
-      
       <Projects />
       <About />
       <Services />

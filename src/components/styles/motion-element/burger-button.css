@@ -15,19 +15,19 @@
 .menu {
     width: 100%;
     background-color: var(--dark-grey);
-    transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+    transition: height 0.5s ease-in-out;
 }
 
 /* ----- open menu ----- */
 
 .menu.hidden {
-    opacity: 0;
-    height: 0px;
+    height: 0;
+    display: none;
 }
 
 .menu.visible {  
-    opacity: 1;
     height: 400px;
+    display: block;
 }
 
 /* ----- animation ----- */

@@ -1,0 +1,50 @@
+.scroll-parent {
+    position: relative;
+    width: 80vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-parent::before,
+.scroll-parent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.scroll-parent::before {
+    left: 0;
+    background: linear-gradient(to right, var(--background-color), rgba(255, 255, 255, 0));
+}
+
+.scroll-parent::after {
+    right: 0;
+    background: linear-gradient(to left, var(--background-color), rgba(255, 255, 255, 0));
+}
+
+.dataOnMe {
+    display: flex;
+    list-style: none;
+    padding-inline: 0;
+    justify-content: space-around;
+    min-width: 200%;
+    animation: scroll 30s linear infinite;
+}
+
+.scroll-parent:hover .dataOnMe {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

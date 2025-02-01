@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Lottie from 'lottie-react';
 import logoIcon from '../../assets/animations/logo-icon.json';
 import BurgerButton from '../motion-element/burger-button';
@@ -6,32 +6,26 @@ import ButtonShared from './ButtonShared.jsx';
 import aiImage from '/images/ai.png';
 
 
-const Navbar = () => {
+const Navbar = ({isMobile}) => {
 
     const navItems = ['ABOUT', 'PROJECTS', 'SERVICES', 'PROCESS', 'FAQ']
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [menuClass, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
-    const isMobile = windowWidth <= 810;
-
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
-        <>
+        <div >
             <nav
                 style={{
-                    display:"flex",
+                    position: isMobile ? "relative" : "fixed",
+                    top: 0,
+                    zIndex : 1,
+                    display: "flex",
                     flexDirection: isMobile ? "row" : "column",
                     alignItems: "center",
                     justifyContent:"space-between",
                     height: isMobile ? "72px" : "100vh",
                     width: isMobile ? "100vw" : "50px",
+                    backgroundColor : "var(--background-color)",
                 }}
             >
                 <Lottie 
@@ -118,7 +112,7 @@ const Navbar = () => {
                     ))}
                 </ul>
             </div>
-        </>
+        </div>
     );
 };
 
