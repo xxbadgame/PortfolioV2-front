@@ -33,7 +33,10 @@ const Hero = ({isMobile}) => {
             <div style={{width:"100vw", marginTop: "40px"}}>
                 <img 
                     style={{
-                        width:"100%", 
+                        width:"100%",
+                        height: isMobile ? "80vh" : "auto",
+                        objectFit: "cover",
+                        objectPosition: "center",
                         borderBottomLeftRadius: isMobile ? "70px" : "200px"
                     }} 
                     src={pp} 
