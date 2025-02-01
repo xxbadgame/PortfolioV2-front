@@ -9,6 +9,7 @@ const ButtonShared = ({children, isMobile}) => {
                 width: isMobile ? "90vw" : "10vw",
                 height: "50px",
                 backgroundColor: "var(--personal-color)",
+                color: "var(--background-color)"
             }}
         >
             {children}

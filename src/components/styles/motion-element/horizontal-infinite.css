@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 810px) {
     .dataOnMe {
-        min-width: 800%;
+        min-width: 900%;
         animation-duration: 10s;
     }
 }
