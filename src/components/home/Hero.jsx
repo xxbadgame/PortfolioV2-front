@@ -30,7 +30,12 @@ const Hero = ({isMobile}) => {
                 <HorizontalInfinite isMobile={isMobile}/>
                 <ButtonShared isMobile={isMobile}>LET'S TALK</ButtonShared>
             </div>
-            <div style={{width:"100vw", marginTop: "40px"}}>
+            <div 
+                style={{
+                    width:"100vw", 
+                    marginTop: isMobile ? "60px" : "40px"
+                }}
+            >
                 <img 
                     style={{
                         width:"100%",

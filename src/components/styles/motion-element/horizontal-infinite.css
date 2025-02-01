@@ -1,6 +1,7 @@
 .scroll-parent {
     position: relative;
     width: 80vw;
+    margin-block: "50px";
     overflow: hidden;
     display: flex;
     align-items: center;
