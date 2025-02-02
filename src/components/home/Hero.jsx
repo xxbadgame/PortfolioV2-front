@@ -26,6 +26,8 @@ const Hero = ({isMobile}) => {
                     display: "flex",
                     alignItems: "center", 
                     flexDirection: isMobile ? "column" : "row",
+                    height: isMobile ? "200px" : "auto",
+                    justifyContent: isMobile ? "space-between" : "inherit"
                 }}>
                 <HorizontalInfinite isMobile={isMobile}/>
                 <ButtonShared isMobile={isMobile}>LET'S TALK</ButtonShared>
@@ -33,7 +35,7 @@ const Hero = ({isMobile}) => {
             <div 
                 style={{
                     width:"100vw", 
-                    marginTop: isMobile ? "60px" : "40px"
+                    marginTop: isMobile ? "20px" : "40px"
                 }}
             >
                 <img 
