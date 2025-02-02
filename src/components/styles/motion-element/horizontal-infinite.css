@@ -1,10 +1,12 @@
 .scroll-parent {
     position: relative;
-    width: 80vw;
+    width: 70vw;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
+
+
 
 .scroll-parent::before,
 .scroll-parent::after {
@@ -32,13 +34,15 @@
     list-style: none;
     padding-inline: 0;
     justify-content: space-around;
-    min-width: 200%;
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 @media screen and (max-width: 810px) {
+    .scroll-parent {
+        width: 100vw;
+    }    
+
     .dataOnMe {
-        min-width: 900%;
         animation-duration: 10s;
     }
 }

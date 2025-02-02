@@ -35,14 +35,18 @@ function App() {
       <div 
         style={{
           marginLeft: isMobile ? "0px" : "50px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Hero isMobile={isMobile}/>
+        <Projects isMobile={isMobile}/>
       </div>
       
 
       {/*
-      <Projects />
+      
       <About />
       <Services />
       <Process />

@@ -19,7 +19,7 @@ const Hero = ({isMobile}) => {
                 }}
             >
                     <span>YANNIS </span>
-                    <span>NZUE ESSONO</span> 
+                    <span>NZUE ESSONO</span>
             </h1>
             <div
                 style={{
@@ -41,7 +41,7 @@ const Hero = ({isMobile}) => {
                 <img 
                     style={{
                         width:"100%",
-                        height: isMobile ? "60vh" : "auto",
+                        height: isMobile ? "70vh" : "100vh",
                         objectFit: "cover",
                         objectPosition: "center",
                         borderBottomLeftRadius: isMobile ? "70px" : "200px"
