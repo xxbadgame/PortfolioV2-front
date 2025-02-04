@@ -25,14 +25,14 @@ const Projects = ({isMobile}) => {
     });
 
     const projects = [
-        { src: "image2.avif", name: "Automate Products", categorie : "(pro)", date: "2024", description: "Automating product flow in a large company" },
-        { src: "image1.avif", name: "Speed Meeting", categorie : "(pro)",date: "2024", description: "Creating a Speed Meeting web app" },
-        { src: "image2.avif", name: "Transcendance 42", date: "SOON", categorie : "(school)", description: "Developing a web app with all necessary functionalities" },
-        { src: "image3.avif", name: "Tiktok Bot", date: "2025", description: "Creating a bot to post automatically on TikTok" },
-        { src: "image4.avif", name: "Finance Bot", date: "2023", description: "Developing a bot for cryptocurrency trading" },
-        { src: "image1.avif", name: "Minishell 42", date: "SOON", categorie : "(school)", description: "Recreating a shell terminal" },
-        { src: "image3.avif", name: "Osmoze", date: "2024", description: "Winning project of an entrepreneurial competition, developed over 8 months in Lyon" },
-        { src: "image4.avif", name: "Youtube", date: "NOW", description: "My YouTube channel showcasing all my new projects" }
+        { src: "homeserve.jpg", name: "Automate Products", categorie : "(pro)", date: "2024", description: "Automating product flow in a large company" },
+        { src: "winorwin.png", name: "Speed Meeting", categorie : "(pro)",date: "2024", description: "Creating a Speed Meeting web app" },
+        { src: "transcendance.jpg", name: "Transcendance 42", date: "SOON", categorie : "(school)", description: "Developing a web app with all necessary functionalities" },
+        { src: "tiktok.png", name: "Tiktok Bot", date: "2025", description: "Creating a bot to post automatically on TikTok" },
+        { src: "trading.jpg", name: "Finance Bot", date: "2023", description: "Developing a bot for cryptocurrency trading" },
+        { src: "minishell.jpg", name: "Minishell 42", date: "SOON", categorie : "(school)", description: "Recreating a shell terminal" },
+        { src: "osmoze.jpg", name: "Osmoze", date: "2024", description: "Winning project of an entrepreneurial competition, developed over 8 months in Lyon" },
+        { src: "youtube.png", name: "Youtube", date: "NOW", description: "My YouTube channel showcasing all my new projects" }
     ];
 
     return (
