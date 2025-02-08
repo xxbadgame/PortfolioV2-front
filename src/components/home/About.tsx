@@ -66,7 +66,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border w-[20%]">
+                <div className="sticky top-0 border-l border-t h-[100vh] w-[20%]">
                     <div className="text-left p-16">
                        <p className="font-mono">PHONE NUMBER</p>
                        <p className="font-mono">EMAIL</p> 
