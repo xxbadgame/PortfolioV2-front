@@ -3,9 +3,9 @@ import { CardItem, CardBody, CardContainer } from "../ui/3d-card";
 const Projects = () => {
 
     const projects = {
-        name : ["Tiktok Bot", "Winorwin", "Homeserve", "Trading Bot", "Minishell", "Transcendance", "Osmoze", "Youtube"],
-        image : ["tiktok.png", "winorwin.png","homeserve.jpg" , "trading.jpg","minishell.jpg", "transcendance.jpg", "osmoze.jpg", "youtube.png"],
-        date : ["2025", "2024", "2023", "2023", "SOON", "SOON", "2024", "NOW"],
+        name : ["Tiktok Bot", "Winorwin", "Homeserve", "Trading Bot", "Minishell", "Transcendance", "Osmoze", "Gleam", "Youtube"],
+        image : ["tiktok.png", "winorwin.png","homeserve.jpg" , "trading.jpg","minishell.jpg", "transcendance.jpg", "osmoze.jpg","gleam.gif" ,"youtube.png"],
+        date : ["2025", "2024", "2023", "2023", "SOON", "SOON", "2024","NOW", "NOW"],
         description : [
             "Automate content creation and post directly on TikTok.",
             "Develop a web app for business meetings.",
@@ -14,12 +14,13 @@ const Projects = () => {
             "Recreate a computer terminal using C.",
             "Build a web app to play Pong online with social networking features.",
             "Winning project of an entrepreneurship competition in Lyon.",
-            "My YouTube channel showcasing some of these project achievements."
+            "Data Analysis and Simulation for industries",
+            "My YouTube channel showcasing some of these project achievements.",
         ]
     }
 
     return (
-        <div>
+        <div className="mb-12">
             <div className="py-32">
                 <p className="font-mono">PROJECTS 2023 - 2025</p>
                 <h2 className="text-[5vw]">Selected Projects</h2>
