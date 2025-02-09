@@ -21,15 +21,22 @@ const Ai = () => {
     };
 
     return (
-        <div className="h-[50vh]">
-            <p className="font-mono text-gray-400 font-semibold mt-24">FAQ</p>
-            <h2 className="text-7xl my-16">Ask <Cover>Yannis AI</Cover> Anything</h2>
-
-            <PlaceholdersAndVanishInput
-                placeholders={placeholders}
-                onChange={handleChange}
-                onSubmit={onSubmit}
-            />
+        <div className="h-[100vh] flex justify-center items-center">
+            <div>
+                <p className="font-mono text-gray-400 font-semibold">FAQ</p>
+                <div>
+                    <h2 className="text-7xl my-16">Ask <Cover>Yannis AI</Cover> Anything</h2>
+                    <div className="relative border rounded-2xl h-[40vh]">
+                        <div className="absolute bottom-10 w-[100%]">
+                            <PlaceholdersAndVanishInput
+                                placeholders={placeholders}
+                                onChange={handleChange}
+                                onSubmit={onSubmit}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

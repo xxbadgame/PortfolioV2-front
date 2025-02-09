@@ -10,13 +10,13 @@ const Process = () => {
                 <p className="text-4xl">Quick and efficient, from concept to execution.</p>
                 <p>The process may vary depending on the project's scope, so if you have questions or need more info, feel free to reach out!</p>
             </div>
-            <div className="flex flex-col items-center py-16">
+            <div className="flex flex-col items-center pt-16">
                 <div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center">01</div>
-                <div className="h-[50vh] w-[2px] bg-neutral-800"></div>
+                <div className="h-[40vh] w-[2px] bg-neutral-800"></div>
                 <div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center">02</div>
-                <div className="h-[50vh] w-[2px] bg-neutral-800"></div>
+                <div className="h-[40vh] w-[2px] bg-neutral-800"></div>
                 <div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center">03</div>
-                <div className="h-[50vh] w-[2px] bg-neutral-800"></div>
+                <div className="h-[40vh] w-[2px] bg-neutral-800"></div>
                 <div className="w-28 h-28 border-[2px] border-neutral-800 rounded-full flex justify-center items-center">launch</div>
             </div>
         </div>

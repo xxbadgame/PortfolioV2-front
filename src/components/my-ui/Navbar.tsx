@@ -1,24 +1,45 @@
-import Lottie from "lottie-react";
-import logoIcon from "../../assets/animations/logo-icon.json";
-import { ModeToggle } from '../ui/mode-toggle.tsx'
+import { Home, User, Briefcase, FileText } from 'lucide-react'
+import { NavBar } from "../ui/tubelight-navbar"
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
 
-    const navItems = ['ABOUT', 'PROJECTS', 'SERVICES', 'PROCESS', 'FAQ']
+    const navItems = [
+        { name: 'HOME', url: '#', icon: Home },
+        { name: 'PROJECTS', url: '#', icon: Briefcase },
+        { name: 'ABOUT', url: '#', icon: User },
+        { name: 'PROCESS', url: '#', icon: FileText },
+        { name: 'AI', url: '#', icon: FileText },
+        { name: 'CONTACT', url: '#', icon: FileText },
+    ]
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY < lastScrollY) {
+                setShowNavbar(true);
+            } else {
+                setShowNavbar(false);
+            }
+            setLastScrollY(window.scrollY);
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            
+            return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScrollY]);
+
 
     return (
-        <div className="flex justify-between items-center h-20 px-8">
-            <div className="flex size-12">
-                <Lottie animationData={logoIcon} loop={true} />
-            </div>
-            <div className="hidden md:flex items-center justify-between w-96 h-[100%] font-mono pt-[10px]">
-                {navItems.map((item, index) => (
-                    <p key={index} className="flex ">{item}</p>
-                ))}
-            </div>
-            <div className="hidden md:flex">
-                <ModeToggle />
-            </div>
+        <div
+            className={`w-full h-24 z-10 transition-opacity duration-300 ${
+                showNavbar ? "opacity-1" : "opacity-0"
+            }`}
+        >
+        <NavBar items={navItems} />
         </div>
     );
   };
