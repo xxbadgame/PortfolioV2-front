@@ -4,7 +4,7 @@ const Process = () => {
         <div className="flex flex-col gap-16 mt-24">
             <div>
                 <p className="font-mono text-gray-400 font-semibold">PROCESS</p>
-                <h2 className="text-8xl">3 Steps & <br/> It's Finished</h2>
+                <h2 className="text-[5vw] leading-none">3 Steps & <br/> It's Finished</h2>
             </div>
             <div>
                 <p className="text-4xl">Quick and efficient, from concept to execution.</p>

@@ -21,7 +21,7 @@ const Services = () => {
                 <div className="w-[80%] flex flex-col text-left pt-24 gap-24">
                     <div className="pl-24">
                         <p className="font-mono text-gray-400 font-semibold">SERVICES</p>
-                        <h2 className="text-8xl">Versatile & <br/> Results-Driven</h2>
+                        <h2 className="text-[5vw] leading-none">Versatile & <br/> Results-Driven</h2>
                     </div>
                     <p className="text-4xl w-[50%] pl-24">
                         An all-in-one solution—everything you need to bring your vision to life, from start to finish.

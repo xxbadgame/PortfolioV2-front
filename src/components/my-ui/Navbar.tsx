@@ -1,4 +1,4 @@
-import { Home, User, Briefcase, FileText } from 'lucide-react'
+import { Home, User, Briefcase, Contact, BrainCircuit } from 'lucide-react'
 import { NavBar } from "../ui/tubelight-navbar"
 import { useState, useEffect } from "react";
 
@@ -12,9 +12,8 @@ const Navbar = ({isMobile}: NavbarProps) => {
         { name: 'HOME', url: '#', icon: Home },
         { name: 'PROJECTS', url: '#', icon: Briefcase },
         { name: 'ABOUT', url: '#', icon: User },
-        { name: 'PROCESS', url: '#', icon: FileText },
-        { name: 'AI', url: '#', icon: FileText },
-        { name: 'CONTACT', url: '#', icon: FileText },
+        { name: 'AI', url: '#', icon: BrainCircuit },
+        { name: 'CONTACT', url: '#', icon: Contact },
     ]
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -39,7 +38,7 @@ const Navbar = ({isMobile}: NavbarProps) => {
 
     return (
         <div
-            className={`w-full z-10 ${isMobile ? "h-0" : "h-24"} transition-opacity duration-300 ${
+            className={`w-full z-10 h-0 md:h-24 transition-opacity duration-300 ${
                 showNavbar ? "opacity-1" : "opacity-0"
             }`}
         >

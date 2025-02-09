@@ -8,8 +8,8 @@ const Hero = () => {
 
   return (
     <div>
-      <h1 className="text-[9vw]">YANNIS NZUE ESSONO</h1>
-      <div className="flex justify-between items-center h-12 my-8 w-[100%] px-8">
+      <h1 className="text-[14vw] md:text-[9vw]">YANNIS <br className="block md:hidden"/> NZUE ESSONO</h1>
+      <div className="flex flex-col md:flex-row justify-between items-center h-12 my-8 w-[100%] px-8">
         <div className="w-[80%]">
           <Marquee autoFill={true} gradient={true} gradientColor="hsl(var(--background))">
             <ul className="flex items-center">
@@ -31,7 +31,7 @@ const Hero = () => {
           <p>LET'S TALK</p>
         </div>
       </div>
-      <img className="rounded-bl-[300px]" src={ynzue} alt="42 image" />
+      <img className="rounded-bl-[20vw]" src={ynzue} alt="42 image" />
     </div>
   );
 };

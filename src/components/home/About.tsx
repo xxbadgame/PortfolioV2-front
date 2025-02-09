@@ -12,16 +12,16 @@ const About = () => {
                 </Marquee>
             </div>
             <div className="flex justify-between">
-                <div className="sticky top-0 w-[30%] h-[100vh]">
+                <div className="hidden md:block sticky top-0 w-[30%] h-[100vh]">
                     <img 
                         className="w-[100%] h-[100%] object-cover object-center rounded-tl-[150px] rounded-br-[150px]" 
                         src="/images/ynzue-es.jpeg" 
                         alt="ynzue-es" />
                 </div>
-                <div className="border-t w-[50%] flex flex-col p-32 gap-24 text-left">
-                    <div className="">
+                <div className="border-t w-[70%] md:w-[50%] flex flex-col p-12 md:p-32 gap-24 text-left">
+                    <div>
                         <p className="font-mono text-gray-400 font-semibold">ABOUT ME</p>
-                        <h2 className="text-8xl">Developer <br/> Experience <br/> & Interactions</h2>
+                        <h2 className="text-[5vw] leading-none">Developer <br/> Experience <br/> & Interactions</h2>
                     </div>
                     <p className="text-4xl">
                         I build solutions that not only strengthen 
@@ -66,8 +66,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sticky top-0 border-l border-t h-[100vh] w-[20%]">
-                    <div className="text-left p-16">
+                <div className="sticky top-0 border-l border-t h-[100vh] w-[30%] md:w-[20%]">
+                    <div className="text-left p-4 md:p-16">
                        <p className="font-mono">PHONE NUMBER</p>
                        <p className="font-mono">EMAIL</p> 
                        <p className="font-mono">PARIS</p> 
