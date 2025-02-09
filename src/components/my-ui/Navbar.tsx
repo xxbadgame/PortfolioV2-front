@@ -2,11 +2,7 @@ import { Home, User, Briefcase, Contact, BrainCircuit } from 'lucide-react'
 import { NavBar } from "../ui/tubelight-navbar"
 import { useState, useEffect } from "react";
 
-interface NavbarProps {
-    isMobile: boolean;
-  }
-
-const Navbar = ({isMobile}: NavbarProps) => {
+const Navbar = () => {
 
     const navItems = [
         { name: 'HOME', url: '#', icon: Home },
