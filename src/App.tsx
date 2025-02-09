@@ -6,6 +6,8 @@ import Projects from './components/home/Projects.tsx';
 import About from './components/home/About.tsx';
 import Services from './components/home/Services.tsx';
 import Process from './components/home/Process.tsx';
+import Ai from './components/home/Ai.tsx';
+import Contact from './components/home/Contact.tsx';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <About />
       <Services />
       <Process />
+      <Ai />
+      <Contact />
     </ThemeProvider>
   )
 }

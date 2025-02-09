@@ -1,5 +1,3 @@
-import Marquee from "react-fast-marquee";
-
 const Services = () => {
 
     const service_cards = {
