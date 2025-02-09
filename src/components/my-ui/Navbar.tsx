@@ -2,7 +2,11 @@ import { Home, User, Briefcase, FileText } from 'lucide-react'
 import { NavBar } from "../ui/tubelight-navbar"
 import { useState, useEffect } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+    isMobile: boolean;
+  }
+
+const Navbar = ({isMobile}: NavbarProps) => {
 
     const navItems = [
         { name: 'HOME', url: '#', icon: Home },
@@ -35,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`w-full h-24 z-10 transition-opacity duration-300 ${
+            className={`w-full z-10 ${isMobile ? "h-0" : "h-24"} transition-opacity duration-300 ${
                 showNavbar ? "opacity-1" : "opacity-0"
             }`}
         >
