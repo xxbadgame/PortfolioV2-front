@@ -21,7 +21,7 @@ const Projects = () => {
 
     return (
         <div className="mb-12">
-            <div className="py-32">
+            <div className="py-16 md:py-32">
                 <p className="font-mono">PROJECTS 2023 - 2025</p>
                 <h2 className="text-[5vw]">Selected Projects</h2>
             </div>

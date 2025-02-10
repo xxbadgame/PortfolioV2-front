@@ -4,11 +4,11 @@ import { Globe } from "@/components/ui/globe"
 const Contact = () => {
     
     return (
-        <div className="bg-white flex h-[100vh]">
+        <div className="bg-white flex md:flex-row flex-col h-[100vh]">
             <div className="w-[35%] text-left p-16 flex flex-col justify-between">
                 <p className="text-neutral-400 font-mono">GO TO THE TOP</p>
                 <div className="flex flex-col">
-                    <h2 className="text-neutral-800 text-7xl">Let's Talk About <br/> Your Vision</h2>
+                    <h2 className="text-neutral-800 text-[3vw]">Let's Talk About <br/> Your Vision</h2>
                     <div className="flex mt-32">
                         <div>
                             <p className="text-neutral-400">PHONE NUMBER</p>
@@ -22,7 +22,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="text-neutral-800">
-                    <p className="text-2xl">Yannis Nzue Essono</p>
+                    <p className="text-[]">Yannis Nzue Essono</p>
                     <p>FULL-STACK DEVELOPER</p>
                 </div>
             </div>
