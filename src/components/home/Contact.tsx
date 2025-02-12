@@ -4,7 +4,7 @@ import { Globe } from "@/components/ui/globe"
 const Contact = () => {
     
     return (
-        <div className="bg-white flex md:flex-row flex-col h-[100vh]">
+        <div className="bg-white flex flex-row justify-between h-[100vh]">
             <div className="w-[35%] text-left p-16 flex flex-col justify-between">
                 <p className="text-neutral-400 font-mono">GO TO THE TOP</p>
                 <div className="flex flex-col">
@@ -26,10 +26,10 @@ const Contact = () => {
                     <p>FULL-STACK DEVELOPER</p>
                 </div>
             </div>
-            <div className="relative flex size-full items-center justify-center overflow-hidden h-[100vh] w-[50%]">
+            <div className="relative flex size-full items-center justify-center overflow-hidden h-[100vh] w-0 lg:w-[50%]">
                 <Globe className="top-28"/>
             </div>
-            <div className="w-[15%] p-8 border-l border-neutral-200 flex flex-col justify-between">
+            <div className="w-[40%] md:w-[15%] p-8 border-l border-neutral-200 flex flex-col justify-between">
                 <div className="text-neutral-400 text-sm font-mono text-left">
                     <p>MADE BY YANNIS</p>
                     <p>CREATE IN FEBRUARY 2025</p>
