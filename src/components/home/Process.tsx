@@ -4,11 +4,11 @@ const Process = () => {
         <div className="flex flex-col gap-16 mt-24">
             <div>
                 <p className="font-mono text-gray-400 font-semibold">PROCESS</p>
-                <h2 className="text-[5vw] leading-none">3 Steps & <br/> It's Finished</h2>
+                <h2 className="text-[9vw] md:text-[5vw] leading-none">3 Steps & <br/> It's Finished</h2>
             </div>
             <div>
-                <p className="text-4xl">Quick and efficient, from concept to execution.</p>
-                <p>The process may vary depending on the project's scope, so if you have questions or need more info, feel free to reach out!</p>
+                <p className="px-8 text-2xl lg:text-4xl">Quick and efficient, from concept to execution.</p>
+                <p className="px-12 mt-4 text-gray-400">The process may vary depending on the project's scope, so if you have questions or need more info, feel free to reach out!</p>
             </div>
             <div className="flex flex-col items-center pt-16">
                 <div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center">01</div>

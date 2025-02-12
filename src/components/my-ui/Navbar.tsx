@@ -1,4 +1,4 @@
-import { Home, User, Briefcase, Contact, BrainCircuit } from 'lucide-react'
+import { Home, Briefcase, Contact, BrainCircuit } from 'lucide-react'
 import { NavBar } from "../ui/tubelight-navbar"
 import { useState, useEffect } from "react";
 
@@ -7,7 +7,6 @@ const Navbar = () => {
     const navItems = [
         { name: 'HOME', url: '#', icon: Home },
         { name: 'PROJECTS', url: '#', icon: Briefcase },
-        { name: 'ABOUT', url: '#', icon: User },
         { name: 'AI', url: '#', icon: BrainCircuit },
         { name: 'CONTACT', url: '#', icon: Contact },
     ]

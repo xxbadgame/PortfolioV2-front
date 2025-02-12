@@ -30,7 +30,7 @@ const Services = () => {
                             <div className="w-[100%] md:w-[25%] border p-8 flex flex-col gap-8">
                                 <div>
                                     <div key={index} className="border rounded-full w-12 h-12 flex justify-center items-center font-mono">{item}</div>
-                                    <h3 className="mt-4 font-bold text-[3vw]">{service_cards.title[index]}</h3>
+                                    <h3 className="h-[15vh] mt-4 font-bold text-[2vw]">{service_cards.title[index]}</h3>
                                 </div>
                                 <p>{service_cards.description[index]}</p>
                                 <div>

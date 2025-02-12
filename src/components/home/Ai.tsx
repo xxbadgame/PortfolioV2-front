@@ -22,12 +22,12 @@ const Ai = () => {
 
     return (
         <div className="h-[100vh] flex justify-center items-center">
-            <div>
+            <div className="px-8">
                 <p className="font-mono text-gray-400 font-semibold">FAQ</p>
                 <div>
-                    <h2 className="text-7xl my-16">Ask <Cover>Yannis AI</Cover> Anything</h2>
+                    <h2 className="text-4xl md:text-7xl py-14">Ask <Cover>Yannis AI</Cover> Anything</h2>
                     <div className="relative border rounded-2xl h-[40vh]">
-                        <div className="absolute bottom-10 w-[100%]">
+                        <div className="absolute bottom-10 w-[100%] px-14">
                             <PlaceholdersAndVanishInput
                                 placeholders={placeholders}
                                 onChange={handleChange}
