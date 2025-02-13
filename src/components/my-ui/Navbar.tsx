@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
 
     const navItems = [
-        { name: 'HOME', url: '#', icon: Home },
-        { name: 'PROJECTS', url: '#', icon: Briefcase },
-        { name: 'AI', url: '#', icon: BrainCircuit },
-        { name: 'CONTACT', url: '#', icon: Contact },
+        { name: 'HOME', url: '#home', icon: Home },
+        { name: 'PROJECTS', url: '#projects', icon: Briefcase },
+        { name: 'AI', url: '#ai', icon: BrainCircuit },
+        { name: 'CONTACT', url: '#contact', icon: Contact },
     ]
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);

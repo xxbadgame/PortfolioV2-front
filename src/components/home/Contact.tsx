@@ -4,7 +4,7 @@ import { Globe } from "@/components/ui/globe"
 const Contact = () => {
     
     return (
-        <div className="bg-white flex flex-row justify-between h-[100vh]">
+        <div className="bg-white flex flex-row justify-between h-[100vh]" id="contact">
             <div className="w-[35%] text-left p-16 flex flex-col justify-between">
                 <p className="text-neutral-400 font-mono">GO TO THE TOP</p>
                 <div className="flex flex-col">

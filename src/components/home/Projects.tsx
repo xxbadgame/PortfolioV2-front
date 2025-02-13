@@ -5,7 +5,7 @@ const Projects = () => {
     const projects = {
         name : ["Tiktok Bot", "Winorwin", "Homeserve", "Trading Bot", "Minishell", "Transcendance", "Osmoze", "Gleam", "Youtube"],
         image : ["tiktok.png", "winorwin.png","homeserve.jpg" , "trading.jpg","minishell.jpg", "transcendance.jpg", "osmoze.jpg","gleam.gif" ,"youtube.png"],
-        date : ["2025", "2024", "2023", "2023", "SOON", "SOON", "2024","NOW", "NOW"],
+        date : ["2025", "2024", "2023", "2023", "SOON", "SOON", "2024","SOON", "NOW"],
         description : [
             "Automate content creation and post directly on TikTok.",
             "Develop a web app for business meetings.",
@@ -20,7 +20,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="mb-12">
+        <div className="mb-12" id="projects">
             <div className="py-16 h-[50vh] flex flex-col justify-center items-center">
                 <p className="font-mono md:text-base md:h-[5vh] flex justify-center items-center text-gray-400">PROJECTS 2023 - 2025</p>
                 <h2 className="md:text-[5vw] text-4xl md:h-[10vh] flex justify-center items-center">Selected Projects</h2>

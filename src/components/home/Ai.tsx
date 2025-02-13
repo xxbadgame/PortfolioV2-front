@@ -21,7 +21,7 @@ const Ai = () => {
     };
 
     return (
-        <div className="h-[100vh] flex justify-center items-center">
+        <div className="h-[100vh] flex justify-center items-center" id="ai">
             <div className="px-8">
                 <p className="font-mono text-gray-400 font-semibold">FAQ</p>
                 <div>
