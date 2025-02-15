@@ -13,11 +13,11 @@ const Ai = () => {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(e.target.value);
-      };
+    };
 
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("submitted");
+    const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log("submitted");
     };
 
     return (
@@ -35,6 +35,7 @@ const Ai = () => {
                             />
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
