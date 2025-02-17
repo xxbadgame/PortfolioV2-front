@@ -15,9 +15,16 @@ const Services = () => {
         av4 : ["BRAND GUIDLINES", "E-COMMERCE", "WIX", "SAAS"],
     }
 
+    const styleBubble = {
+        margin:"10px",
+        border: "1px solid grey",
+        borderRadius: "50px",
+        padding: "10px",
+    } 
+
     return (
         <div className="flex flex-col md:flex-row">
-            <div className="w-[100%] md:w-[80%] flex flex-col text-left pt-24 gap-24">
+            <div className="w-[100%] md:w-[70%] flex flex-col text-left pt-24 gap-24">
                 <div className="px-8 md:pl-24">
                     <p className="font-mono text-gray-400 font-semibold">SERVICES</p>
                     <h2 className="text-[9vw] md:text-[5vw] leading-none">Versatile & <br/> Results-Driven</h2>
@@ -45,8 +52,25 @@ const Services = () => {
 
                 </div>
             </div>
-            <div className="w-[20%] border-l border-b">
-                <p>Réseaux sociaux</p>
+            <div className="w-[30%] p-4 border-l border-b">
+                <p className="font-mono text-gray-400">SECTORS</p>
+                <div className="flex flex-wrap mt-6">
+                    <p style={styleBubble}>Sports</p>
+                    <p style={styleBubble}>Education</p>
+                    <p style={styleBubble}>Social Media</p>
+                    <p style={styleBubble}>Arts</p>
+                    <p style={styleBubble}>Fintech</p>
+                    <p style={styleBubble}>Web 3</p>
+                </div>
+                <p className="font-mono text-gray-400">CURRENT STACK</p>
+                <div className="flex flex-wrap mt-6">
+                    <p style={styleBubble}>Sports</p>
+                    <p style={styleBubble}>Education</p>
+                    <p style={styleBubble}>Social Media</p>
+                    <p style={styleBubble}>Arts</p>
+                    <p style={styleBubble}>Fintech</p>
+                    <p style={styleBubble}>Web 3</p>
+                </div>
             </div>
         </div>
     );
