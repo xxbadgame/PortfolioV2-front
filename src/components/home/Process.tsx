@@ -97,7 +97,7 @@ const Process = () => {
                         animationData={animationData}
                         loop={false}
                     />
-                    <span className="absolute z-10 text-[1.5vw]" ref={targetRef4}>launch</span>
+                    <span className="absolute z-10 text-[18px]" ref={targetRef4}>launch</span>
                 </motion.div>
             </div>
         </div>
