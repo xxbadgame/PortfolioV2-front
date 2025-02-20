@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee"
+import Clock from "../my-ui/clock"
 
 const About = () => {
     
@@ -77,7 +78,7 @@ const About = () => {
                        <p className="font-mono text-gray-500">CURRENT RESIDENCE</p> 
                        <p>PARIS</p>
                        <p className="font-mono text-gray-500">CURRENT TIME</p> 
-                       <p>(time)</p>
+                       <p><Clock/></p>
                     </div>
                     <div className="mt-10">
                         <p className="font-mono text-gray-500">SOCIALS</p>

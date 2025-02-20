@@ -34,7 +34,6 @@ const Ai = () => {
             );
             
             const aiResponse = response.data.responseYAI;
-            console.log(aiResponse);
             setMessages((prev) => [...prev, { sender: 'ai', text: aiResponse }]);
             setInputValue('');
 
@@ -50,27 +49,28 @@ const Ai = () => {
                 <div>
                     <h2 className="text-4xl md:text-7xl py-14">Ask <Cover>Yannis AI</Cover> Anything</h2>
                     <div className="relative border rounded-2xl h-[40vh] overflow-hidden">
-                        <div className="absolute bottom-10 w-[100%] px-14 overflow-hidden">
+                        <div className="absolute bottom-20 w-full px-10 md:px-20 h-[100%] overflow-y-auto">
                             {messages.map((msg, index) => (
-                                <div
-                                    key={index}
-                                    className={`max-w-[80%] p-3 rounded-2xl ${
-                                        msg.sender === 'user'
-                                            ? 'bg-blue-500 text-white self-end rounded-br-none'
-                                            : 'bg-gray-200 text-black self-start rounded-bl-none'
-                                    }`}
-                                >
-                                    {msg.text}
-                                </div>
+                            <div
+                                key={index}
+                                className={`md:max-w-[70%] max-w-[90%] p-4 rounded-2xl ${
+                                msg.sender === 'user'
+                                    ? 'my-4 md:ml-[30%] ml-[10%] bg-blue-500 text-white text-left self-end rounded-br-none'
+                                    : 'my-4 bg-gray-200 text-black self-start text-left rounded-bl-none'
+                                }`}
+                            >
+                                {msg.text}
+                            </div>
                             ))}
+                        </div>
+                        <div className="absolute bottom-5 w-full px-10">
                             <PlaceholdersAndVanishInput
-                                placeholders={placeholders}
-                                onChange={handleChange}
-                                onSubmit={onSubmit}
+                            placeholders={placeholders}
+                            onChange={handleChange}
+                            onSubmit={onSubmit}
                             />
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
