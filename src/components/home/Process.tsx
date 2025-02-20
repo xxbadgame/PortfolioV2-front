@@ -92,7 +92,7 @@ const Process = () => {
 
                 <motion.div
                     style={{ borderColor: color4, transition: "all 0.3s" }}
-                    className="relative md:w-36 md:h-36 w-[80vw] h-[30vh] border-[2px] md:border-[2px] ml-[260px] top-[-2px] md:ml-0 border-neutral-800 md:rounded-full rounded-bl-2xl rounded-tr-2xl flex justify-center items-center overflow-hidden"
+                    className="relative md:w-36 md:h-36 w-72 h-[30vh] border-[2px] md:border-[2px] ml-[286px] top-[-2px] md:ml-0 border-neutral-800 md:rounded-full rounded-bl-2xl rounded-tr-2xl flex justify-center items-center overflow-hidden"
                 >
                     <Lottie
                         key={playLottie ? 'play' : 'pause'}
