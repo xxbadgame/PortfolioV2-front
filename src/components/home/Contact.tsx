@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="relative flex size-full items-center justify-center overflow-hidden h-[100vh] w-0 lg:w-[50%]">
                 <Globe className="top-28"/>
             </div>
-            <div className="w-[40%] ls:w-[15%] p-8 md:border-l border-neutral-200 flex flex-col justify-between">
+            <div className="w-[40%] lg:w-[15%] p-8 md:border-l border-neutral-200 flex flex-col justify-between">
                 <div className="text-neutral-400 text-sm font-mono text-left">
                     <p>MADE BY YANNIS</p>
                     <p>CREATE IN FEBRUARY 2025</p>

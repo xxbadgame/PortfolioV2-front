@@ -59,31 +59,40 @@ const Process = () => {
                 <p className="px-8 text-2xl lg:text-4xl">Quick and efficient, from concept to execution.</p>
                 <p className="px-12 mt-4 text-gray-400">The process may vary depending on the project's scope, so if you have questions or need more info, feel free to reach out!</p>
             </div>
-            <div className="flex flex-col items-center pt-16">
+            <div className="flex flex-col items-center pt-16 w-[20%] md:w-[100%]">
                 <motion.div className="relative w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor1, transition: "all 0.5s" }}
                 >01</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef1}>
-                    <motion.div style={{ height: height1 }} className="absolute w-[2px] bg-blue-800 origin-top" />
-                </div>
+                    <motion.div style={{ height: height1 }} className="absolute w-[2px] bg-blue-500 origin-top" />
+                    <div className="absolute top-12 left-12">
+                        <h3>Discovery</h3>
+                    </div>
+                </div>      
 
                 <motion.div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor2, transition: "all 0.5s" }}
                 >02</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef2}>
-                    <motion.div style={{ height: height2 }} className="absolute w-[2px] bg-blue-800 origin-top" />
+                    <motion.div style={{ height: height2 }} className="absolute w-[2px] bg-blue-500 origin-top" />
+                    <div className="absolute top-12 md:right-12 left-12 text-left">
+                        <h3>Concept Development</h3>
+                    </div>
                 </div>
 
                 <motion.div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor3, transition: "all 0.5s" }}
                 >03</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef3}>
-                    <motion.div style={{ height: height3 }} className="absolute w-[2px] bg-blue-800 origin-top" />
+                    <motion.div style={{ height: height3 }} className="absolute w-[2px] bg-blue-500 origin-top" />
+                    <div className="absolute top-12 left-12">
+                    <h3>Execution</h3>
+                    </div>
                 </div>
 
                 <motion.div
                     style={{ borderColor: color4, transition: "all 0.3s" }}
-                    className="relative w-36 h-36 border-[2px] border-neutral-800 rounded-full flex justify-center items-center overflow-hidden"
+                    className="relative md:w-36 md:h-36 w-[80vw] h-[30vh] border-[2px] md:border-[2px] ml-[260px] top-[-2px] md:ml-0 border-neutral-800 md:rounded-full rounded-bl-2xl rounded-tr-2xl flex justify-center items-center overflow-hidden"
                 >
                     <Lottie
                         key={playLottie ? 'play' : 'pause'}
@@ -91,13 +100,13 @@ const Process = () => {
                             position: "absolute",
                             width: "100%",
                             height: "100%",
-                            borderRadius: 100,
+                            borderRadius: 20,
                             visibility: playLottie ? "visible" : "hidden",
                         }}
                         animationData={animationData}
                         loop={false}
                     />
-                    <span className="absolute z-10 text-[18px]" ref={targetRef4}>launch</span>
+                    <span className="absolute z-10 md:text-[18px] text-4xl" ref={targetRef4}>launch</span>
                 </motion.div>
             </div>
         </div>
