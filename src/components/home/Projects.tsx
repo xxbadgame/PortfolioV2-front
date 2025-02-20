@@ -27,7 +27,7 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3">
                 {projects.name.map((item, index) => (
-                    <div>
+                    <div key={index}>
                         <CardContainer className="h-[600px]">
                             <CardBody className="flex flex-col justify-between bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[90vw] md:w-[30vw] h-[100%] rounded-xl p-6 border">
                                 <div>
