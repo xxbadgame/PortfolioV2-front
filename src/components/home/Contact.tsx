@@ -4,11 +4,11 @@ import Clock from "../my-ui/clock";
 
 const Contact = () => {   
     return (
-        <div className="bg-white flex flex-row justify-between h-[100vh]" id="contact">
-            <div className="md:w-[35%] w-[60%] text-left p-8 md:p-16 flex flex-col justify-between">
+        <div className="bg-white flex flex-row justify-between h-[100vh] pb-16 md:pb-0" id="contact">
+            <div className="md:w-[35%] w-[60%] text-left p-12 md:p-16 flex flex-col justify-between">
                 <p className="text-neutral-400 font-mono">GO TO THE TOP</p>
                 <div className="flex flex-col">
-                    <h2 className="text-neutral-800 text-3xl md:text-[3vw]">Let's Talk About <br/> Your Vision</h2>
+                    <h2 className="text-neutral-800 text-3xl md:text-[3vw] leading-none">Let's Talk About <br/> Your Vision</h2>
                     <div className="flex md:flex-row flex-col mt-32">
                         <div>
                             <p className="text-neutral-400">PHONE NUMBER</p>
