@@ -48,8 +48,8 @@ const Ai = () => {
                 <p className="font-mono text-gray-400 font-semibold">FAQ</p>
                 <div>
                     <h2 className="text-4xl md:text-7xl py-14">Ask <Cover>Yannis AI</Cover> Anything</h2>
-                    <div className="relative border rounded-2xl h-[40vh] overflow-hidden">
-                        <div className="absolute bottom-20 w-full px-10 md:px-20 h-[100%] overflow-y-auto">
+                    <div className="relative border rounded-2xl h-[50vh] overflow-hidden">
+                        <div className="absolute bottom-[20%] w-full px-10 md:px-20 h-[80%] overflow-y-auto">
                             {messages.map((msg, index) => (
                             <div
                                 key={index}
