@@ -20,10 +20,10 @@ const About = () => {
                             src="/images/ynzue-es.jpeg" 
                             alt="ynzue-es" />
                     </div>
-                    <div className="border-t flex flex-col lg:w-[70%] w-[100%] p-12 md:p-16 lg:p-32 gap-24 text-left">
+                    <div className="border-t flex flex-col lg:w-[70%] w-[100%] p-8 md:p-16 lg:p-32 gap-24 text-left">
                         <div>
                             <p className="font-mono text-gray-400 font-semibold">ABOUT ME</p>
-                            <h2 className="text-[7vw] md:text-[5vw] leading-none">Developer <br/> Experience <br/> & Interactions</h2>
+                            <h2 className="text-5xl md:text-[5vw] leading-none">Developer <br/> Experience <br/> & Interactions</h2>
                         </div>
                         <p className="text-[5vw] md:text-[2vw]">
                             I build solutions that not only strengthen 
@@ -69,7 +69,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sticky top-0 md:border-l md:border-t h-[50vh] md:h-[100vh] md:w-[30%] w-[100%] p-16 lg:p-16 md:p-8 text-left">
+                <div className="sticky top-0 md:border-l md:border-t h-[50vh] md:h-[100vh] md:w-[30%] w-[100%] p-8 lg:p-16 md:p-8 text-left">
                     <div>
                        <p className="font-mono text-gray-500">PHONE NUMBER</p>
                        <p>06 09 63 05 23</p>

@@ -65,7 +65,7 @@ const Process = () => {
                 >01</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef1}>
                     <motion.div style={{ height: height1 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 left-12">
+                    <div className="absolute top-12 left-12 text-left w-72">
                         <h3>Discovery</h3>
                     </div>
                 </div>      
@@ -75,7 +75,7 @@ const Process = () => {
                 >02</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef2}>
                     <motion.div style={{ height: height2 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 md:right-12 left-12 text-left">
+                    <div className="absolute top-12 left-12 md:left-auto md:right-12 text-left w-72">
                         <h3>Concept Development</h3>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Process = () => {
                 >03</motion.div>
                 <div className="relative h-[40vh] w-[2px] bg-neutral-800" ref={targetRef3}>
                     <motion.div style={{ height: height3 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 left-12">
+                    <div className="absolute top-12 left-12 text-left w-72">
                     <h3>Execution</h3>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ const Projects = () => {
 
     return (
         <div className="mb-12" id="projects">
-            <div className="py-16 h-[50vh] flex flex-col justify-center items-center">
+            <div className="pt-32 pb-16 flex flex-col justify-center items-center">
                 <p className="font-mono md:text-base md:h-[5vh] flex justify-center items-center text-gray-400">PROJECTS 2023 - 2025</p>
                 <h2 className="md:text-[5vw] text-4xl md:h-[10vh] flex justify-center items-center">Selected Projects</h2>
             </div>
