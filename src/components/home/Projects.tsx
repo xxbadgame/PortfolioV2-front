@@ -1,4 +1,5 @@
 import { CardItem, CardBody, CardContainer } from "../ui/3d-card";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 
@@ -16,7 +17,8 @@ const Projects = () => {
             "Winning project of an entrepreneurship competition in Lyon.",
             "Data Analysis and Simulation for industries",
             "My YouTube channel showcasing some of these project achievements.",
-        ]
+        ],
+        link : ["tiktok", "winorwin", "homeserve", "trading", "minishell", "transcendance", "osmoze", "gleam", "youtube"]
     }
 
     return (
@@ -57,19 +59,19 @@ const Projects = () => {
                                 <div className="flex justify-between items-center mt-20">
                                 <CardItem
                                     translateZ={20}
-                                    href="https://twitter.com/mannupaaji"
-                                    target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
                                     Discover →
                                 </CardItem>
-                                <CardItem
-                                    translateZ={20}
-                                    as="button"
-                                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                                >
-                                    {item}
-                                </CardItem>
+                                <Link to={`/${projects.link[index]}`} className="">
+                                    <CardItem
+                                        translateZ={20}
+                                        as="button"
+                                        className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                    >
+                                            {item}
+                                    </CardItem>
+                                </Link>
                                 </div>
                             </CardBody>
                         </CardContainer> 

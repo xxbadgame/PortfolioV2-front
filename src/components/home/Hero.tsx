@@ -28,7 +28,7 @@ const Hero = () => {
             </ul>
           </Marquee>
         </div>
-        <div className="w-[100%] h-[100%] flex justify-center mt-[20px] md:pt-0">
+        <div className="w-[100%] h-[100%] flex justify-center mt-[20px] md:mt-0">
           <ButtonHero />
         </div>
       </div>

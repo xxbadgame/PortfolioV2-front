@@ -1,26 +1,34 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from './components/theme-provider.tsx'
-import Navbar from './components/my-ui/Navbar.tsx';
-import Hero from "./components/home/Hero.tsx";
-import Projects from './components/home/Projects.tsx';
-import About from './components/home/About.tsx';
-import Services from './components/home/Services.tsx';
-import Process from './components/home/Process.tsx';
-import Ai from './components/home/Ai.tsx';
-import Contact from './components/home/Contact.tsx';
+import Home from './components/pages/home.tsx';
+import TiktokPage from './components/pages/tiktok.tsx';
+import GleamPage from './components/pages/gleam.tsx';
+import HomeservePage from './components/pages/homeserve.tsx';
+import MinishellPage from './components/pages/minishell.tsx';
+import OsmozePage from './components/pages/osmoze.tsx';
+import TradingPage from './components/pages/trading.tsx';
+import TranscendancePage from './components/pages/transcendance.tsx';
+import WinorwinPage from './components/pages/winorwin.tsx';
 
 function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Navbar />
-      <Hero />
-      <Projects />
-      <About />
-      <Services />
-      <Process />
-      <Ai />
-      <Contact />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tiktok" element={<TiktokPage />} />
+          <Route path="/gleam" element={<GleamPage />} />
+          <Route path="/homeserve" element={<HomeservePage />} />
+          <Route path="/minishell" element={<MinishellPage />} />
+          <Route path="/osmoze" element={<OsmozePage />} />
+          <Route path="/trading" element={<TradingPage />} />
+          <Route path="/transcendance" element={<TranscendancePage />} />
+          <Route path="/winorwin" element={<WinorwinPage />} />
+          <Route path="/youtube" element={<TradingPage />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   )
 }
