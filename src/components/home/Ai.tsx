@@ -45,9 +45,9 @@ const Ai = () => {
     return (
         <div className="h-[100vh] flex justify-center items-center" id="ai">
             <div className="px-8">
-                <p className="font-mono text-gray-400 font-semibold">FAQ</p>
+                <p className="font-mono text-gray-400 font-semibold pb-4">FAQ</p>
                 <div>
-                    <h2 className="text-4xl md:text-7xl py-14">Ask <Cover>Yannis AI</Cover> Anything</h2>
+                    <h2 className="text-4xl md:text-7xl pb-14">Ask <Cover>Yannis AI</Cover> Anything</h2>
                     <div className="relative border rounded-2xl h-[50vh] overflow-hidden">
                         <div className="absolute bottom-[20%] w-full px-10 md:px-20 h-[80%] overflow-y-auto">
                             {messages.map((msg, index) => (
