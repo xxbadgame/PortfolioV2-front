@@ -92,7 +92,7 @@ const Process = () => {
 
                 <motion.div
                     style={{ borderColor: color4, transition: "all 0.3s" }}
-                    className="relative md:w-36 md:h-36 w-72 h-[30vh] border-[2px] md:border-[2px] ml-[286px] top-[-2px] md:ml-0 border-neutral-800 md:rounded-full rounded-bl-2xl rounded-tr-2xl flex justify-center items-center overflow-hidden"
+                    className="relative md:w-44 md:h-44 w-72 h-[30vh] border-[2px] md:border-[2px] ml-[286px] top-[-2px] md:ml-0 border-neutral-800 md:rounded-full rounded-bl-[100px] rounded-tr-[100px] flex justify-center items-center overflow-hidden"
                 >
                     <Lottie
                         key={playLottie ? 'play' : 'pause'}
@@ -106,7 +106,7 @@ const Process = () => {
                         animationData={animationData}
                         loop={false}
                     />
-                    <span className="absolute z-10 md:text-[18px] text-4xl" ref={targetRef4}>launch</span>
+                    <span className="absolute z-10 md:text-3xl text-4xl" ref={targetRef4}>launch</span>
                 </motion.div>
             </div>
         </div>
