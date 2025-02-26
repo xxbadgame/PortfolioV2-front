@@ -26,7 +26,7 @@ const TiktokPage = () => {
 
                 <div className="w-full md:w-[80vw] h-[150vh]">
                     <img
-                        src={`/images/projects-image/tiktok.png`}
+                        src="/images/projects-image/tiktok.png"
                         className="w-full h-full rounded-bl-[100px] object-cover group-hover/card:shadow-xl"
                         alt="thumbnail"
                     />
@@ -39,26 +39,68 @@ const TiktokPage = () => {
                 </div>
                 <div className="w-[50%]">
                     <p>OVERVIEW</p>
-                    <p>TikTok Bot</p>
+                    <p>
+                        Development of an advanced TikTok bot capable of automatically posting multiple times per day.
+                        This bot not only manages the scheduling and publishing of content but also generates engaging videos 
+                        tailored to specific themes. Additionally, it creates follow-up or reaction videos designed to capture
+                        viewers' attention, boost engagement, and increase visibility on the platform.    
+                    </p>
                 </div>
             </div>
 
-            <div>
-                <div className="h-screen">
-                    <p>KEY MOMENT // 1</p>
+            <div className="text-left flex flex-col gap-64">
+                <div>
+                    <div className="h-[20vh] sticky top-0 z-0">
+                        <p>KEY MOMENT // 1</p>
+                        <h3>Content Creation</h3>
+                        <p>Download videos from platform like youtube and edit with python to create new content with footage. Find key moment who can catch people on video</p>
+                    </div>
+                    <div className="h-[120vh] relative z-10">
+                        <img 
+                            src="/images/projects-image/tiktok.png"
+                            className="w-full h-full rounded-bl-[100px] object-cover group-hover/card:shadow-xl"
+                            alt="thumbnail"
+                        />
+                    </div>
                 </div>
-                <div className="h-screen">
-                    <p>KEY MOMENT // 2</p>
+                <div className="relative flex h-screen">
+                    <div className="sticky top-0 self-start w-1/2 p-4">
+                        <p>KEY MOMENT // 2</p>
+                        <h3>Algorithme and request</h3>
+                        <p>
+                        When the video is ready, we create a request to push it on TikTok.  
+                        On GitHub, I found a signature that allows sending the video to my account.
+                        </p>
+                    </div>
+
+                    <div className="w-1/2 h-[120vh]">
+                        <img 
+                        src="/images/projects-image/tiktok.png"
+                        className="w-full h-full rounded-br-[100px] rounded-tl-[100px] object-cover"
+                        alt="thumbnail"
+                        />
+                    </div>
                 </div>
-                <div className="h-screen">
-                    <p>KEY MOMENT // 3</p>
+                <div className="">
+                    <div className="h-[20vh] sticky top-0 z-0">
+                        <p>KEY MOMENT // 3</p>
+                        <h3>Put on server</h3>
+                        <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
+                    </div>
+                    <div className="h-[120vh] relative z-10">
+                        <img 
+                            src="/images/projects-image/tiktok.png"
+                            className="w-full h-full rounded-br-[100px] rounded-bl-[100px] object-cover"
+                            alt="thumbnail"
+                        />
+                    </div>
                 </div>
             </div>
 
             <div className="h-screen">
                 <p>RESULT</p>
                 <h2>TIKTOK AUTOMATION</h2>
-                <p>Evoluating solution</p>
+                <p>This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
             </div>
 
             <div className="h-screen">
