@@ -85,7 +85,7 @@ const TiktokPage = () => {
 
             <div className="text-left flex flex-col gap-32">
                 <div>
-                    <div className="h-[20vh] sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
+                    <div className=" sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 1</p>
                         <h3 className="text-3xl font-bold mb-6">Content Creation</h3>
                         <p className="text-neutral-400 text-lg">
@@ -102,7 +102,7 @@ const TiktokPage = () => {
                     </div>
                 </div>
                 <div className="relative md:flex h-screen">
-                    <div className="sticky top-0 self-start w-1/2 p-12 z-0">
+                    <div className="sticky top-0 self-start md:w-1/2 p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
                         <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
                         <p>
@@ -120,7 +120,7 @@ const TiktokPage = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="h-[20vh] sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
+                    <div className=" sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
                         <h3 className="text-3xl font-bold mb-6">Put on server</h3>
                         <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
@@ -137,15 +137,15 @@ const TiktokPage = () => {
 
             <div className="lg:w-[40%] text-left p-12 mt-24">
                 <p className="font-mono text-lg text-neutral-500">RESULTS</p>
-                <h2 className="text-8xl mb-24">TIKTOK AUTOMATION</h2>
-                <p className="text-4xl">This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
+                <h2 className="text-4xl md:text-8xl mb-24 font-semibold">TIKTOK AUTOMATION</h2>
+                <p className="text-2xl md:text-4xl">This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
             </div>
 
             <div className="w-[100%] h-[1px] bg-neutral-800 my-32" />
 
             <div>
                 <p className="font-mono text-lg text-neutral-500">MORE PROJECTS</p>
-                <h2 className="text-7xl">You might also like</h2>
+                <h2 className="text-6xl p-8 md:text-7xl">You might also like</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 my-24">
                     {projects.name.map((item, index) => (
                         <div key={index}>
