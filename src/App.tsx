@@ -10,12 +10,15 @@ import OsmozePage from './components/pages/osmoze.tsx';
 import TradingPage from './components/pages/trading.tsx';
 import TranscendancePage from './components/pages/transcendance.tsx';
 import WinorwinPage from './components/pages/winorwin.tsx';
+import YoutubePage from './components/pages/youtube.tsx';
+import ScrollToTop from './components/my-ui/scrollToTop.tsx';
 
 function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
+        <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tiktok" element={<TiktokPage />} />
@@ -26,7 +29,7 @@ function App() {
           <Route path="/trading" element={<TradingPage />} />
           <Route path="/transcendance" element={<TranscendancePage />} />
           <Route path="/winorwin" element={<WinorwinPage />} />
-          <Route path="/youtube" element={<TradingPage />} />
+          <Route path="/youtube" element={<YoutubePage />} />
         </Routes>
       </Router>
     </ThemeProvider>

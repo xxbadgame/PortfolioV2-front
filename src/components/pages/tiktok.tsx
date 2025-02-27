@@ -85,7 +85,7 @@ const TiktokPage = () => {
 
             <div className="text-left flex flex-col gap-32">
                 <div>
-                    <div className=" sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
+                    <div className=" sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 1</p>
                         <h3 className="text-3xl font-bold mb-6">Content Creation</h3>
                         <p className="text-neutral-400 text-lg">
@@ -101,8 +101,8 @@ const TiktokPage = () => {
                         />
                     </div>
                 </div>
-                <div className="relative md:flex h-screen">
-                    <div className="sticky top-0 self-start md:w-1/2 p-12 z-0">
+                <div className="relative md:flex">
+                    <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
                         <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
                         <p>
@@ -111,7 +111,7 @@ const TiktokPage = () => {
                         </p>
                     </div>
 
-                    <div className="md:w-1/2 h-[80vh] md:h-[100vh] relative z-10">
+                    <div className="h-[100vh] relative z-10">
                         <img 
                             src="/images/projects-image/tiktok.png"
                             className="w-full h-full rounded-br-[100px] rounded-tl-[100px] object-cover"
@@ -120,15 +120,15 @@ const TiktokPage = () => {
                     </div>
                 </div>
                 <div>
-                    <div className=" sticky top-0 z-0 p-12 lg:w-[40%] mb-24">
+                    <div className="sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
                         <h3 className="text-3xl font-bold mb-6">Put on server</h3>
                         <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
                     </div>
-                    <div className="h-[80vh] md:h-[120vh] relative z-10">
+                    <div className="h-[100vh] relative z-10">
                         <img 
                             src="/images/projects-image/tiktok.png"
-                            className="w-full h-full rounded-br-[100px] rounded-bl-[100px] object-cover"
+                            className="w-full h-full rounded-b-[50px] object-cover"
                             alt="thumbnail"
                         />
                     </div>
