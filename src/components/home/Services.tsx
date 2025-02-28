@@ -1,19 +1,19 @@
 const Services = () => {
 
     const service_cards = {
-        number : ["01", "02", "03", "04"],
-        title : ["Branding & Marketing", "Website Design", "Website Development", "Application Design"],
-        description : [
-            "Branding that builds trust and drives loyalty through clear visuals and messaging.",
-            "Engaging web design that enhances brand impact and drives conversions.",
-            "No-code web development using tools like Webflow and Framer for fast, scalable solutions.",
-            "User-focused app design that maximizes usability and encourages retention.",
+        number: ["01", "02", "03", "04"],
+        title: ["Software", "Web app", "Automate", "Data"],
+        description: [
+            "Build software using C language.",
+            "Develop web applications using React and Django.",
+            "Automate processes using Python and n8n.",
+            "Data analysis and machine learning projects."
         ],
-        av1 : ["BRAND STARTEGY", "LANDING PAGES", "FRAMER", "MOBILE"],
-        av2 : ["LOGO DESIGN", "CORPORATE WEBSITES", "WEBFLOW", "DESKTOP"],
-        av3 : ["VISUAL IDENTITY", "BLOGS", "WORDPRESS", "COMPLEX SYSTEMS"],
-        av4 : ["BRAND GUIDLINES", "E-COMMERCE", "WIX", "SAAS"],
-    }
+        av1: ["Programming", "Agile Development", "Integration", "Architecture"],  // Software
+        av2: ["API", "Frontend", "Backend", "Testing"],  // Web app
+        av3: ["AI Tools", "Server", "Performance", "OOP"],  // Automate
+        av4: ["Cloud", "Database", "Business Intelligence", "Data Analysis"],  // Data
+    };
 
     const styleBubble = {
         margin:"10px",

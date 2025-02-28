@@ -20,7 +20,7 @@ const About = () => {
                             src="/images/ynzue-es.jpeg" 
                             alt="ynzue-es" />
                     </div>
-                    <div className="border-t flex flex-col lg:w-[70%] w-[100%] p-8 md:p-16 lg:p-32 gap-24 text-left">
+                    <div className="border-t flex flex-col lg:w-[70%] w-[100%] p-8 md:p-16 lg:p-24 gap-24 text-left">
                         <div>
                             <p className="font-mono text-gray-400 font-semibold">ABOUT ME</p>
                             <h2 className="text-5xl md:text-[5vw] leading-none">Developer <br/> Experience <br/> & Interactions</h2>
@@ -46,22 +46,28 @@ const About = () => {
                                     <div className="flex md:flex-row flex-col md:justify-between w-[100%] ml-4 h-56">
                                         <p className="md:w-[30%] w-[100%]">2025 - Current</p>
                                         <div className="w-[70%]">
-                                            <h4>Freelance Developer</h4>
-                                            <p>Work for companies</p>
+                                            <h4 className="font-bold">42 School & GLEAM CEO</h4>
+                                            <p className="mt-4 lg:text-lg">
+                                                Automated solutions with code and no-code, integrating AI to help companies focus on their core business.
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex md:flex-row flex-col md:justify-between w-[100%] ml-4 h-56">
                                         <p className="md:w-[30%] w-[100%]">2023 - 2024</p>
                                         <div className="w-[70%]">
-                                            <h4>Freelance Developer</h4>
-                                            <p>Work for companies</p>
+                                            <h4 className="font-bold">Work-study program with Homeserve</h4>
+                                            <p className="mt-4 lg:text-lg">
+                                                Work in Data Product Management at HomeServe Energy Services, focusing on data quality and workflow.
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex md:flex-row flex-col md:justify-between w-[100%] ml-4 h-56">
                                         <p className="md:w-[30%] w-[100%]">2022 - 2023</p>
                                         <div className="w-[70%]">
-                                            <h4>Freelance Developer</h4>
-                                            <p>Work for companies</p>
+                                            <h4 className="font-bold">DUT in Data Science</h4>
+                                            <p className="mt-4 lg:text-lg">
+                                                Study Data Science at IUT Lumière in Lyon, developing skills in Business Intelligence solutions and data analysis.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

@@ -105,9 +105,9 @@ const WinorwinPage = () => {
                     <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
                         <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
-                        <p>
-                        When the video is ready, we create a request to push it on TikTok.  
-                        On GitHub, I found a signature that allows sending the video to my account.
+                        <p >
+                            When the video is ready, we create a request to push it on TikTok.  
+                            On GitHub, I found a signature that allows sending the video to my account.
                         </p>
                     </div>
 

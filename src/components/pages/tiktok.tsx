@@ -105,9 +105,9 @@ const TiktokPage = () => {
                     <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
                         <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
-                        <p>
-                        When the video is ready, we create a request to push it on TikTok.  
-                        On GitHub, I found a signature that allows sending the video to my account.
+                        <p className="text-neutral-400 text-lg">
+                            When the video is ready, we create a request to push it on TikTok.  
+                            On GitHub, I found a signature that allows sending the video to my account.
                         </p>
                     </div>
 
@@ -123,7 +123,9 @@ const TiktokPage = () => {
                     <div className="sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
                         <h3 className="text-3xl font-bold mb-6">Put on server</h3>
-                        <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
+                        <p className="text-neutral-400 text-lg">
+                            I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.
+                        </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
                         <img 
