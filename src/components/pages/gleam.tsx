@@ -72,10 +72,10 @@ const GleamPage = () => {
                     <div className="md:w-[60%] p-[10px]">
                         <p className="font-mono text-neutral-500 font-semibold">OVERVIEW</p>
                         <p className="text-2xl">
-                            Development of an advanced TikTok bot capable of automatically posting multiple times per day.
-                            This bot not only manages the scheduling and publishing of content but also generates engaging videos 
-                            tailored to specific themes. Additionally, it creates follow-up or reaction videos designed to capture
-                            viewers' attention, boost engagement, and increase visibility on the platform.    
+                            Gleam is a developing project aimed at creating decentralized tools and software 
+                            for the industrial sector in France. With over 300,000 companies in the country 
+                            benefiting from these innovations, Gleam seeks to become a leading provider of IT services for the industry, 
+                            focusing on collaborative learning and problem-solving.   
                         </p>
                     </div>
                 </div>
@@ -87,10 +87,12 @@ const GleamPage = () => {
                 <div>
                     <div className=" sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 1</p>
-                        <h3 className="text-3xl font-bold mb-6">Content Creation</h3>
+                        <h3 className="text-3xl font-bold mb-6">Vision Development</h3>
                         <p className="text-neutral-400 text-lg">
-                            Download videos from platform like youtube and edit with python 
-                            to create new content with footage. Find key moment who can catch people on video
+                            The current phase of Gleam focuses on developing a clear vision for creating tools 
+                            and software tailored to the needs of the industrial sector. By understanding the 
+                            specific challenges faced by these companies, Gleam aims to provide customized solutions 
+                            that enhance efficiency and productivity across various industries in France.
                         </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
@@ -104,10 +106,11 @@ const GleamPage = () => {
                 <div className="relative md:flex">
                     <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
-                        <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
+                        <h3 className="text-3xl font-bold mb-6">Expansion into IT Services</h3>
                         <p>
-                        When the video is ready, we create a request to push it on TikTok.  
-                        On GitHub, I found a signature that allows sending the video to my account.
+                            Gleam's long-term goal is to grow into a fully-fledged IT services company for the industrial sector. 
+                            This transition will involve expanding our offerings, building a strong service network, and positioning 
+                            Gleam as a key player in the digital transformation of French industries.
                         </p>
                     </div>
 
@@ -122,8 +125,13 @@ const GleamPage = () => {
                 <div>
                     <div className="sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
-                        <h3 className="text-3xl font-bold mb-6">Put on server</h3>
-                        <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
+                        <h3 className="text-3xl font-bold mb-6">Collaborative Platform</h3>
+                        <p>
+                            What sets Gleam apart is its commitment to integrating people from diverse 
+                            backgrounds on an online platform dedicated to learning and development. 
+                            This collaborative approach aims to solve real-world problems by harnessing collective 
+                            intelligence and fostering innovation across different fields of expertise.
+                        </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
                         <img 
@@ -138,7 +146,11 @@ const GleamPage = () => {
             <div className="lg:w-[40%] text-left p-12 mt-24">
                 <p className="font-mono text-lg text-neutral-500">RESULTS</p>
                 <h2 className="text-4xl md:text-8xl mb-24 font-semibold">GLEAM</h2>
-                <p className="text-2xl md:text-4xl">This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
+                <p className="text-2xl md:text-4xl">
+                    Gleam is on the path to becoming a pioneer in the decentralized development of industrial tools and software in France. 
+                    By focusing on industry-specific solutions, expanding IT services, and fostering a collaborative environment, 
+                    Gleam will play a crucial role in transforming the way industrial companies operate and solve challenges.
+                </p>
             </div>
 
             <div className="w-[100%] h-[1px] bg-neutral-800 my-32" />

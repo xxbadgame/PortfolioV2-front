@@ -72,10 +72,11 @@ const TradingPage = () => {
                     <div className="md:w-[60%] p-[10px]">
                         <p className="font-mono text-neutral-500 font-semibold">OVERVIEW</p>
                         <p className="text-2xl">
-                            Development of an advanced TikTok bot capable of automatically posting multiple times per day.
-                            This bot not only manages the scheduling and publishing of content but also generates engaging videos 
-                            tailored to specific themes. Additionally, it creates follow-up or reaction videos designed to capture
-                            viewers' attention, boost engagement, and increase visibility on the platform.    
+                            The Trading Bot is designed to automate cryptocurrency trading 
+                            by utilizing APIs from Binance and Bitget. It performs technical 
+                            analysis using simple statistical indicators and makes decisions based 
+                            on optimal trading moments. The bot processes real-time data to identify 
+                            key entry and exit points.
                         </p>
                     </div>
                 </div>
@@ -87,10 +88,10 @@ const TradingPage = () => {
                 <div>
                     <div className=" sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 1</p>
-                        <h3 className="text-3xl font-bold mb-6">Content Creation</h3>
+                        <h3 className="text-3xl font-bold mb-6">Binance and Bitget APIs</h3>
                         <p className="text-neutral-400 text-lg">
-                            Download videos from platform like youtube and edit with python 
-                            to create new content with footage. Find key moment who can catch people on video
+                            The bot integrates Binance’s API with WebSocket for continuous
+                            data access and Bitget’s API for direct trading on a demo account.
                         </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
@@ -104,10 +105,10 @@ const TradingPage = () => {
                 <div className="relative md:flex">
                     <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
-                        <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
+                        <h3 className="text-3xl font-bold mb-6">Technical Analysis</h3>
                         <p>
-                        When the video is ready, we create a request to push it on TikTok.  
-                        On GitHub, I found a signature that allows sending the video to my account.
+                            The bot analyzes previous market data using indicators like Bollinger Bands,
+                            Moving Averages, and the RSI to identify key trading opportunities.
                         </p>
                     </div>
 
@@ -122,8 +123,10 @@ const TradingPage = () => {
                 <div>
                     <div className="sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
-                        <h3 className="text-3xl font-bold mb-6">Put on server</h3>
-                        <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
+                        <h3 className="text-3xl font-bold mb-6">Automated Trading</h3>
+                        <p>
+                            Using the Bitget API, the bot is capable of executing buy or sell orders directly on the platform based on its analysis.
+                        </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
                         <img 
@@ -138,7 +141,11 @@ const TradingPage = () => {
             <div className="lg:w-[40%] text-left p-12 mt-24">
                 <p className="font-mono text-lg text-neutral-500">RESULTS</p>
                 <h2 className="text-4xl md:text-8xl mb-24 font-semibold">TRADING</h2>
-                <p className="text-2xl md:text-4xl">This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
+                <p className="text-2xl md:text-4xl">
+                    This Trading Bot offers an efficient and automated solution for cryptocurrency trading,
+                    leveraging real-time data, key technical indicators, and seamless integration with Binance and Bitget APIs.
+                    It simplifies the decision-making process, allowing for timely and effective trading actions on a demo account.
+                </p>
             </div>
 
             <div className="w-[100%] h-[1px] bg-neutral-800 my-32" />

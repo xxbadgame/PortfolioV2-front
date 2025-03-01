@@ -12,15 +12,15 @@ const WinorwinPage = () => {
     }
 
     const projects = {
-        name : ["Tiktok Bot", "Winorwin", "Homeserve"],
-        image : ["winorwin.png", "winorwin.png","winorwin.png"],
+        name : ["Tiktok Bot", "Youtube", "Homeserve"],
+        image : ["tiktok.png", "youtube.png","homeserve.jpg"],
         date : ["2025", "2024", "2023"],
         description : [
             "Automate content creation and post directly on TikTok.",
-            "Develop a web app for business meetings.",
+            "My youtube channel.",
             "Data managment for HomeServe products.",
         ],
-        link : ["tiktok", "winorwin", "homeserve"]
+        link : ["tiktok", "youtube", "homeserve"]
     }
 
     return(
@@ -34,11 +34,11 @@ const WinorwinPage = () => {
                 <div className="flex flex-col gap-12">
                     <div>
                         <p className="font-mono text-neutral-500 font-semibold">SERVICES</p>
-                        <p>Developpment</p>
+                        <p>Developpment Web App</p>
                     </div>
                     <div>
                     <p className="font-mono text-neutral-500 font-semibold">CLIENT</p>
-                        <p>Personnal</p>
+                        <p>Professional</p>
                         </div>
                     <div>
                         <p className="font-mono text-neutral-500 font-semibold">TEAM</p>
@@ -72,10 +72,8 @@ const WinorwinPage = () => {
                     <div className="md:w-[60%] p-[10px]">
                         <p className="font-mono text-neutral-500 font-semibold">OVERVIEW</p>
                         <p className="text-2xl">
-                            Development of an advanced TikTok bot capable of automatically posting multiple times per day.
-                            This bot not only manages the scheduling and publishing of content but also generates engaging videos 
-                            tailored to specific themes. Additionally, it creates follow-up or reaction videos designed to capture
-                            viewers' attention, boost engagement, and increase visibility on the platform.    
+                            Development of a web application facilitating professional
+                            networking through speed-meeting-style interactions.  
                         </p>
                     </div>
                 </div>
@@ -87,10 +85,10 @@ const WinorwinPage = () => {
                 <div>
                     <div className=" sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 1</p>
-                        <h3 className="text-3xl font-bold mb-6">Content Creation</h3>
+                        <h3 className="text-3xl font-bold mb-6">Frontend</h3>
                         <p className="text-neutral-400 text-lg">
-                            Download videos from platform like youtube and edit with python 
-                            to create new content with footage. Find key moment who can catch people on video
+                            Frontend inspired by the Kunveni platform, with enhancements 
+                            incorporating an online client perspective aligned with various speed-meeting sessions.
                         </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
@@ -104,10 +102,10 @@ const WinorwinPage = () => {
                 <div className="relative md:flex">
                     <div className="sticky top-0 self-start md:w-[40%] p-12 z-0">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 2</p>
-                        <h3 className="text-3xl font-bold mb-6">Algorithme and request</h3>
-                        <p >
-                            When the video is ready, we create a request to push it on TikTok.  
-                            On GitHub, I found a signature that allows sending the video to my account.
+                        <h3 className="text-3xl font-bold mb-6">Backend</h3>
+                        <p>
+                            Backend: API development and database management, including user authentication and 
+                            registration, round-table algorithm, event creation, manual participant addition, and API documentation.
                         </p>
                     </div>
 
@@ -123,7 +121,10 @@ const WinorwinPage = () => {
                     <div className="sticky top-0 z-0 p-12 lg:w-[40%]">
                         <p className="font-mono text-xl text-neutral-500">KEY MOMENT // 3</p>
                         <h3 className="text-3xl font-bold mb-6">Put on server</h3>
-                        <p>I want to regulary post so i put my program on rasbery pi for post at 7, 12 and 18h every day without open tiktok app myself.</p>
+                        <p>
+                            Deployed on Heroku for the backend and Vercel 
+                            for the frontend, ensuring scalability and fast delivery.
+                        </p>
                     </div>
                     <div className="h-[100vh] relative z-10">
                         <img 
@@ -138,7 +139,12 @@ const WinorwinPage = () => {
             <div className="lg:w-[40%] text-left p-12 mt-24">
                 <p className="font-mono text-lg text-neutral-500">RESULTS</p>
                 <h2 className="text-4xl md:text-8xl mb-24 font-semibold">WINORWIN</h2>
-                <p className="text-2xl md:text-4xl">This solution can evoluate on content creation obviously, i make video on my youtube channel with more details and fun !</p>
+                <p className="text-2xl md:text-4xl">
+                    This web application streamlines professional networking through
+                    speed-meeting interactions. With a robust backend, an intuitive frontend,
+                    and efficient deployment on Heroku and Vercel, it offers 
+                    a seamless and scalable experience for users.
+                </p>
             </div>
 
             <div className="w-[100%] h-[1px] bg-neutral-800 my-32" />
