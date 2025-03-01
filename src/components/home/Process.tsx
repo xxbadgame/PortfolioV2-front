@@ -59,21 +59,21 @@ const Process = () => {
                 <p className="px-8 text-2xl lg:text-4xl">Quick and efficient, from concept to execution.</p>
                 <p className="px-12 mt-4 text-gray-400">The process may vary depending on the project's scope, so if you have questions or need more info, feel free to reach out!</p>
             </div>
-            <div className="flex flex-col items-center pt-16 w-[20%] md:w-[100%]">
+            <div className="flex flex-col items-center pt-16 w-[15%] md:w-[100%]">
                 <motion.div className="relative w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor1, transition: "all 0.5s" }}
                 >01</motion.div>
                 <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef1}>
                     <motion.div style={{ height: height1 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 left-12 text-left w-72 lg:w-96">
+                    <div className="absolute top-6 left-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Discovery</h3>
                         <div className="mt-4">
                             <h4 className="font-semibold mt-4">Consultation</h4>
-                            <p className="text-neutral-400">Engage in discussions to explore your needs, target audience, and overall objectives.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Engage in discussions to explore your needs, target audience, and overall objectives.</p>
                             <h4 className="font-semibold mt-4">Research</h4>
-                            <p className="text-neutral-400">Conduct thorough research to analyze market trends, user behavior, and competitor offerings for deeper insights.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Conduct thorough research to analyze market trends, user behavior, and competitor offerings for deeper insights.</p>
                             <h4 className="font-semibold mt-4">Define Objectives</h4>
-                            <p className="text-neutral-400">Set clear project goals, deliverables, and timelines to create a structured approach.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Set clear project goals, deliverables, and timelines to create a structured approach.</p>
                         </div>
                     </div>
                 </div>      
@@ -83,15 +83,15 @@ const Process = () => {
                 >02</motion.div>
                 <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef2}>
                     <motion.div style={{ height: height2 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 left-12 md:left-auto md:right-12 text-left w-72 lg:w-96">
+                    <div className="absolute top-6 left-12 md:left-auto md:right-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Concept Development</h3>
                         <div className="mt-4">
                             <h4 className="font-semibold mt-4">Ideation</h4>
-                            <p className="text-neutral-400">Brainstorm various design solutions to capture the essence of your brand.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Brainstorm various design solutions to capture the essence of your brand.</p>
                             <h4 className="font-semibold mt-4">Sketching and Prototyping</h4>
-                            <p className="text-neutral-400">Create initial sketches and prototypes to visualize concepts and explore different directions.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Create initial sketches and prototypes to visualize concepts and explore different directions.</p>
                             <h4 className="font-semibold mt-4">Feedback Loop</h4>
-                            <p className="text-neutral-400">Share concepts for your input, refining ideas based on your thoughts and preferences.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Share concepts for your input, refining ideas based on your thoughts and preferences.</p>
                         </div>
                     </div>
                 </div>
@@ -101,15 +101,15 @@ const Process = () => {
                 >03</motion.div>
                 <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef3}>
                     <motion.div style={{ height: height3 }} className="absolute w-[2px] bg-blue-500 origin-top" />
-                    <div className="absolute top-12 left-12 text-left w-72 lg:w-96">
+                    <div className="absolute top-6 left-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Execution</h3>
                         <div className="mt-4">
                             <h4 className="font-semibold mt-4">Final Design</h4>
-                            <p className="text-neutral-400">Develop detailed designs, ensuring consistency with your brand identity and user experience principles.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Develop detailed designs, ensuring consistency with your brand identity and user experience principles.</p>
                             <h4 className="font-semibold mt-4">Style Guide</h4>
-                            <p className="text-neutral-400">Create a style guide that outlines colors, typography, and visual elements for cohesive branding.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Create a style guide that outlines colors, typography, and visual elements for cohesive branding.</p>
                             <h4 className="font-semibold mt-4">Handoff</h4>
-                            <p className="text-neutral-400">Prepare all assets and documentation needed for production or development.</p>
+                            <p className="text-neutral-400 text-sm md:text-lg">Prepare all assets and documentation needed for production or development.</p>
                         </div>
                     </div>
                 </div>
