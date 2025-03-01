@@ -31,9 +31,9 @@ const Process = () => {
     const bgColor3 = useTransform(scrollYProgress3, [0, 1], ["hsl(var(--background))", "#3b82f6"]);
     const color4 = useTransform(scrollYProgress4, [0, 1], ["hsl(var(--border))", "#3b82f6"]);
 
-    const height1 = useTransform(scrollYProgress1, [0,1], ["0vh", "50vh"]);
-    const height2 = useTransform(scrollYProgress2, [0,1], ["0vh", "50vh"]);
-    const height3 = useTransform(scrollYProgress3, [0,1], ["0vh", "50vh"]);
+    const height1 = useTransform(scrollYProgress1, [0,1], ["0vh", "500px"]);
+    const height2 = useTransform(scrollYProgress2, [0,1], ["0vh", "500px"]);
+    const height3 = useTransform(scrollYProgress3, [0,1], ["0vh", "500px"]);
 
     const [playLottie, setPlayLottie] = useState(false);
 
@@ -63,7 +63,7 @@ const Process = () => {
                 <motion.div className="relative w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor1, transition: "all 0.5s" }}
                 >01</motion.div>
-                <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef1}>
+                <div className="relative h-[500px] w-[2px] bg-neutral-800" ref={targetRef1}>
                     <motion.div style={{ height: height1 }} className="absolute w-[2px] bg-blue-500 origin-top" />
                     <div className="absolute top-6 left-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Discovery</h3>
@@ -81,7 +81,7 @@ const Process = () => {
                 <motion.div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor2, transition: "all 0.5s" }}
                 >02</motion.div>
-                <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef2}>
+                <div className="relative h-[500px] w-[2px] bg-neutral-800" ref={targetRef2}>
                     <motion.div style={{ height: height2 }} className="absolute w-[2px] bg-blue-500 origin-top" />
                     <div className="absolute top-6 left-12 md:left-auto md:right-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Concept Development</h3>
@@ -99,7 +99,7 @@ const Process = () => {
                 <motion.div className="w-12 h-12 border-[2px] border-neutral-800 rounded-full flex justify-center items-center"
                     style={{ backgroundColor: bgColor3, transition: "all 0.5s" }}
                 >03</motion.div>
-                <div className="relative h-[50vh] w-[2px] bg-neutral-800" ref={targetRef3}>
+                <div className="relative h-[500px] w-[2px] bg-neutral-800" ref={targetRef3}>
                     <motion.div style={{ height: height3 }} className="absolute w-[2px] bg-blue-500 origin-top" />
                     <div className="absolute top-6 left-12 text-left w-56 md:w-80 lg:w-96">
                         <h3 className="text-2xl font-bold">Execution</h3>

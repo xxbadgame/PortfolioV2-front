@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col gap-8" id="home">
       <h1 className="text-[14vw] md:text-[9vw] md:mt-0 mt-8">YANNIS <br className="block md:hidden"/> NZUE ESSONO</h1>
-      <div className="flex flex-col md:flex-row justify-between items-center h-[15vh] md:h-12 w-[100%] md:px-8">
+      <div className="flex flex-col md:flex-row justify-between items-center h-[100px] md:h-12 w-[100%] md:px-8">
         <div className="w-[100%] md:w-[80%] ">
           <Marquee autoFill={true} gradient={true} gradientColor="hsl(var(--background))">
             <ul className="flex items-center">
