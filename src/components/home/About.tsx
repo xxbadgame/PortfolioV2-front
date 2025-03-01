@@ -75,7 +75,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sticky top-0 md:border-l md:border-t h-[50vh] md:h-[100vh] md:w-[30%] w-[100%] p-8 lg:p-16 md:p-8 text-left">
+                <div className="sticky top-0 md:border-l md:border-t h-[400px] md:h-[100vh] md:w-[30%] w-[100%] p-8 lg:p-16 md:p-8 text-left">
                     <div>
                        <p className="font-mono text-gray-500">PHONE NUMBER</p>
                        <p>06 09 63 05 23</p>
