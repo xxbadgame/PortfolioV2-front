@@ -9,10 +9,10 @@ const Services = () => {
             "Automate processes using Python and n8n.",
             "Data analysis and machine learning projects."
         ],
-        av1: ["Programming", "Agile Development", "Integration", "Architecture"],  // Software
-        av2: ["API", "Frontend", "Backend", "Testing"],  // Web app
-        av3: ["AI Tools", "Server", "Performance", "OOP"],  // Automate
-        av4: ["Cloud", "Database", "Business Intelligence", "Data Analysis"],  // Data
+        av1: ["Programming", "Agile Development", "Integration", "Architecture"],
+        av2: ["API", "Frontend", "Backend", "Testing"],
+        av3: ["AI Tools", "Server", "Performance", "OOP"],
+        av4: ["Cloud", "Database", "Business Intelligence", "Data Analysis"],
     };
 
     const styleBubble = {
