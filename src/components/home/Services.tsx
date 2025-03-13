@@ -20,7 +20,12 @@ const Services = () => {
         border: "1px solid grey",
         borderRadius: "50px",
         padding: "10px",
-    } 
+    }
+
+    const styleImage = {
+        margin:"10px",
+        height:"40px"
+    }
 
     return (
         <div className="flex flex-col md:flex-row">
@@ -64,12 +69,20 @@ const Services = () => {
                 </div>
                 <p className="font-mono text-gray-400 mb-6 mt-16 text-left">CURRENT STACK</p>
                 <div className="flex flex-wrap">
-                    <p style={styleBubble}>Sports</p>
-                    <p style={styleBubble}>Education</p>
-                    <p style={styleBubble}>Social Media</p>
-                    <p style={styleBubble}>Arts</p>
-                    <p style={styleBubble}>Fintech</p>
-                    <p style={styleBubble}>Web 3</p>
+                    <img style={styleImage} src="public/images/stack/azure.png"></img>
+                    <img style={styleImage} src="public/images/stack/c.png"></img>
+                    <img style={styleImage} src="public/images/stack/c++.png"></img>
+                    <img style={styleImage} src="public/images/stack/excel.png"></img>
+                    <img style={styleImage} src="public/images/stack/figma.png"></img>
+                    <img style={styleImage} src="public/images/stack/git.png"></img>
+                    <img style={styleImage} src="public/images/stack/n8n.png"></img>
+                    <img style={styleImage} src="public/images/stack/playwright.png"></img>
+                    <img style={styleImage} src="public/images/stack/postgre.png"></img>
+                    <img style={styleImage} src="public/images/stack/powerbi.png"></img>
+                    <img style={styleImage} src="public/images/stack/python.png"></img>
+                    <img style={styleImage} src="public/images/stack/react.png"></img>
+                    <img style={styleImage} src="public/images/stack/selenium.png"></img>
+                    <img style={styleImage} src="public/images/stack/uipath.png"></img>
                 </div>
             </div>
         </div>

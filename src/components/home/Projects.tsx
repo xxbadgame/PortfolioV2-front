@@ -15,7 +15,7 @@ const Projects = () => {
             "Recreate a computer terminal using C.",
             "Build a web app to play Pong online with social networking features.",
             "Winning project of an entrepreneurship competition in Lyon.",
-            "Data Analysis and Simulation for industries",
+            "Data Analysis, Simulation, Automation for industries",
             "My YouTube channel showcasing some of these project achievements.",
         ],
         link : ["tiktok", "winorwin", "homeserve", "trading", "minishell", "transcendance", "osmoze", "gleam", "youtube"]
