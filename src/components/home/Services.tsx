@@ -69,20 +69,20 @@ const Services = () => {
                 </div>
                 <p className="font-mono text-gray-400 mb-6 mt-16 text-left">CURRENT STACK</p>
                 <div className="flex flex-wrap">
-                    <img style={styleImage} src="public/images/stack/azure.png"></img>
-                    <img style={styleImage} src="public/images/stack/c.png"></img>
-                    <img style={styleImage} src="public/images/stack/c++.png"></img>
-                    <img style={styleImage} src="public/images/stack/excel.png"></img>
-                    <img style={styleImage} src="public/images/stack/figma.png"></img>
-                    <img style={styleImage} src="public/images/stack/git.png"></img>
-                    <img style={styleImage} src="public/images/stack/n8n.png"></img>
-                    <img style={styleImage} src="public/images/stack/playwright.png"></img>
-                    <img style={styleImage} src="public/images/stack/postgre.png"></img>
-                    <img style={styleImage} src="public/images/stack/powerbi.png"></img>
-                    <img style={styleImage} src="public/images/stack/python.png"></img>
-                    <img style={styleImage} src="public/images/stack/react.png"></img>
-                    <img style={styleImage} src="public/images/stack/selenium.png"></img>
-                    <img style={styleImage} src="public/images/stack/uipath.png"></img>
+                    <img style={styleImage} src="/images/stack/azure.png"></img>
+                    <img style={styleImage} src="/images/stack/c.png"></img>
+                    <img style={styleImage} src="/images/stack/c++.png"></img>
+                    <img style={styleImage} src="/images/stack/excel.png"></img>
+                    <img style={styleImage} src="/images/stack/figma.png"></img>
+                    <img style={styleImage} src="/images/stack/git.png"></img>
+                    <img style={styleImage} src="/images/stack/n8n.png"></img>
+                    <img style={styleImage} src="/images/stack/playwright.png"></img>
+                    <img style={styleImage} src="/images/stack/postgre.png"></img>
+                    <img style={styleImage} src="/images/stack/powerbi.png"></img>
+                    <img style={styleImage} src="/images/stack/python.png"></img>
+                    <img style={styleImage} src="/images/stack/react.png"></img>
+                    <img style={styleImage} src="/images/stack/selenium.png"></img>
+                    <img style={styleImage} src="/images/stack/uipath.png"></img>
                 </div>
             </div>
         </div>
