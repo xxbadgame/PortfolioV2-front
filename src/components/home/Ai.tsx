@@ -28,7 +28,7 @@ const Ai = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8000/api/chat/', 
+                'https://yannis-ai-29f44aab88c9.herokuapp.com/api/chat/', 
                 {data: inputValue}, 
                 {headers: {'Content-Type': 'application/json'}}
             );
